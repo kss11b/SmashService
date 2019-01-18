@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Smash Service</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="static/smash.js"></script>
+  </head>
+  <body class="">
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper blue darken-4">
+          <a href="#!" class="brand-logo center">Smash Service</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s6 card blue darken-4">
+          <div class="card-content white input-field col s12">
+            <span class="card-title">Random By Tier</span>
+            <select class="tier-select">
+              <option value="" selected>Any Tier</option>
+              <option value="S">S Tier</option>
+              <option value="A">A Tier</option>
+              <option value="B">B Tier</option>
+              <option value="C">C Tier</option>
+              <option value="D">D Tier</option>
+            </select>
+            <a class="tier-submit waves-effect waves-light btn">Submit</a>
+            <a class="tier-clear waves-effect waves-light red btn">Clear</a>
+            <ul class="character-list collection with-header">
+            </ul>
+          </div>
+        </div>
+        <div class="col s6 card blue darken-4">
+          <div class="card-content white input-field col s12">
+            <span class="card-title">Random Stage</span>
+            <select class="stage-select">
+              <option value="All" selected>Any Map</option>
+              <option value="Tournament">Tournament</option>
+              <option value="Switch">Switch</option>
+              <option value="WiiU">Wii U</option>
+              <option value="3DS">3DS</option>
+              <option value="Wii">Wii</option>
+              <option value="Gamecube">GameCube</option>
+              <option value="N64">N64</option>
+              <option value="Smash-4">Smash 4</option>
+              <option value="Legacy">Legacy</option>
+
+            </select>
+            <a class="stage-submit waves-effect waves-light btn">Submit</a>
+            <a class="stage-clear waves-effect waves-light red btn">Clear</a>
+            <ul class="stage-list collection with-header">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
