@@ -1,0 +1,13 @@
+hapiVersion: skaffold/v1beta8
+kind: Config
+build:
+  artifacts:
+    - image: smash-service
+  tagPolicy:
+    sha256: {}
+deploy:
+  kubectl:
+    manifests:
+      - kubernetes-manifests/deployment.yaml
+      - kubernetes-manifests/service.yaml
+      - kubernetes-manifests/ingress.yaml

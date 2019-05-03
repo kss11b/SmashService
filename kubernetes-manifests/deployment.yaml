@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smash-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: smash-service
+  template:
+    metadata:
+      labels:
+        app: smash-service
+    spec:
+      containers:
+      - name: smash-service
+        image: gcr.io/nice-column-232821/smash-service
+        ports:
+        - containerPort: 8080
+
+        # - containerPort: 8080
+        # env:
+        # - name: PORT
+        #   value: "80"

@@ -267,4 +267,5 @@ def stage_with_arg(category_arg):
 def stage():
     return stage_selection()
 
-app.run(debug=True)
+# app.run(debug=True)
+app.run(debug=True, host="0.0.0.0", port=8080, threaded=False)
